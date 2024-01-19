@@ -48,10 +48,10 @@ console.log(addTwo(3, 4));//7
 
 //implicit return 
 //Method-1
-const addTwo = (num1, num2) => num1 + num2
+const addTwo1 = (num1, num2) => num1 + num2
 
 //Method-2
-const addTwo = (num1, num2) => (num1 + num2) 
+const addTwo2 = (num1, num2) => (num1 + num2) 
 /*Note: When we use () bracket there is no need to use 'return'. But when we use {} bracket we have to use 'return' */
 
 const add = (num1, num2) => ({username: "hitesh"})
