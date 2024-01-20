@@ -72,4 +72,11 @@ py
 cp
 */
 
+//The forEach() method is an iterative method. It calls a provided callbackFn function once for each element in an array in ascending-index order.
+
+//forEach() always returns undefined and is not chainable. 
+//Therefore we use map() and other functions
+
+//There is no way to stop or break a forEach() loop other than by throwing an exception. If you need such behavior, the forEach() method is the wrong tool.
+
 
