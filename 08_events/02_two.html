@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur Code</h1>
+    <button id="stop">Stop</button>
+    
+</body>
+
+    <script>
+        /*****setTimeout()*******/
+        const sayHitesh = function(){
+            console.log("Hitesh")
+        }
+
+        const changeHeading = function(){
+            document.querySelector('h1').innerHTML = "Best JS Series"
+        }
+
+        const changeMe = setTimeout(changeHeading, 2000)
+
+        //clearTimeout() -> this need reference of setTimeout(), so we have to store it then only we can use in clearTimeout()
+        document.querySelector('#stop').addEventListener('click', function(){
+            clearTimeout(changeMe)
+            console.log("STOPPED!")
+        })
+        //now if we press Stop button before 2 second then changeHeading will not run
+
+
+    </script>
+
+</html>
